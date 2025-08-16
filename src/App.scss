@@ -67,5 +67,9 @@
   }
 }
 .about {
-  margin-top: 80px; // Margin-top for about component after hero-section
+  margin-top: 80px; // Default margin-top for mobile and smaller screens
+
+  @media (min-width: 769px) {
+    margin-top: 60px; // Increased margin-top for desktop screens
+  }
 }

@@ -7,6 +7,7 @@
   font-size: clamp(0.9rem, 1.5vw, 1.6rem);
   line-height: 1.6;
   text-align: left;
+  color: var(--text-color); /* Ensure text color adapts to theme */
 }
 
 .italic-satoshi {
@@ -17,7 +18,7 @@
 @media (max-width: 768px) {
   .about-section {
     margin-top: 100px; /* Increase margin-top for mobile view */
-    font-size: 1.1rem; /* Increased font size for mobile view */
+    font-size: 1.3rem; /* Increased font size for mobile view */
     
   }
 }
