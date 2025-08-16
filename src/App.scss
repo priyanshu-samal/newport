@@ -12,10 +12,22 @@
   }
 }
 
+.app {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px; // You can adjust this value
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
 .hero-section {
   position: relative;
-  display: flex;
-  flex-direction: column;
   // Define CSS variables for responsive positioning
   --header-height-lg: 200px;
   --header-height-md: 150px;
@@ -28,9 +40,40 @@
   --current-header-height: var(--header-height-lg);
   --current-profile-image-size: var(--profile-image-size-lg);
 
+  .profile {
+    // Desktop positioning (default)
+    position: absolute;
+    left: 5vw;
+    top: calc(var(--current-header-height) - (var(--current-profile-image-size) / 2));
+    z-index: 1; // Ensure profile is above header if overlapping
+  }
+
+  .name-display {
+    // Desktop positioning (default)
+    position: absolute;
+    left: calc(5vw + var(--current-profile-image-size) + 20px); /* To the right of profile */
+    top: calc(var(--current-header-height) + 20px); /* 20px below the banner */
+    transform: none;
+    z-index: 10;
+    width: auto;
+  }
+
   @media (max-width: 768px) {
     --current-header-height: var(--header-height-md);
     --current-profile-image-size: var(--profile-image-size-md);
+
+    .profile {
+      position: absolute; /* Keep absolute positioning */
+      left: 5vw; /* Maintain left alignment */
+      top: calc(var(--current-header-height) - (var(--current-profile-image-size) / 2)); /* Above banner */
+    }
+
+    .name-display {
+      position: absolute; /* Keep absolute positioning */
+      left: calc(5vw + var(--current-profile-image-size) + 20px); /* To the right of profile */
+      top: calc(var(--current-header-height) + 20px); /* Below banner */
+      width: auto;
+    }
   }
 
   @media (max-width: 480px) {

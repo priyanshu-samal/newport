@@ -1,0 +1,20 @@
+.name-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .greeting {
+    font-family: 'Satoshi Regular', sans-serif;
+    font-size: clamp(1rem, 2vw, 2.5rem); /* Adjusted to vw for consistent scaling */
+    font-weight: 400;
+    margin-bottom: 0.5vw; /* Adjusted to vw */
+  }
+
+  .name {
+    font-family: 'Satoshi Black', sans-serif;
+    font-size: clamp(2rem, 5vw, 6rem); /* Adjusted to vw for consistent scaling */
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+  }
+}
