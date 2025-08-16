@@ -1,0 +1,34 @@
+.profile {
+  position: absolute;
+  left: 5vw; // Responsive left position
+  top: calc(var(--current-header-height) - (var(--current-profile-image-size) / 2)); // Responsive top position
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image-container {
+  width: var(--current-profile-image-size);
+  height: var(--current-profile-image-size);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #1a1a1a;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile.light-theme-border {
+  .profile-image-container {
+    border-color: white;
+  }
+}
+
+.profile h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  white-space: nowrap;
+}

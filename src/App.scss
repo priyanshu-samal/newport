@@ -1,0 +1,40 @@
+.app {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px; // You can adjust this value
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // Define CSS variables for responsive positioning
+  --header-height-lg: 200px;
+  --header-height-md: 150px;
+  --header-height-sm: 100px;
+  --profile-image-size-lg: 170px;
+  --profile-image-size-md: 140px; // Adjust as needed for smaller screens
+  --profile-image-size-sm: 120px; // Adjust as needed for smaller screens
+
+  // Default values
+  --current-header-height: var(--header-height-lg);
+  --current-profile-image-size: var(--profile-image-size-lg);
+
+  @media (max-width: 768px) {
+    --current-header-height: var(--header-height-md);
+    --current-profile-image-size: var(--profile-image-size-md);
+  }
+
+  @media (max-width: 480px) {
+    --current-header-height: var(--header-height-sm);
+    --current-profile-image-size: var(--profile-image-size-sm);
+  }
+}

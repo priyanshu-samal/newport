@@ -1,0 +1,70 @@
+.floating-dock {
+  display: flex;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  .icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .tooltip {
+      position: absolute;
+      top: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.875rem;
+      white-space: nowrap;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: #007bff; // Change to your desired hover color
+      }
+    }
+  }
+
+  .email-icon {
+    color: #333;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .theme-toggle {
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
