@@ -1,16 +1,27 @@
 .floating-dock {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   position: fixed;
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0.5rem;
   border-radius: 1rem;
   backdrop-filter: blur(10px);
   z-index: 100;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%; /* Added for responsiveness */
+
+  @media (max-width: 768px) {
+    gap: 0.4rem; // Adjust gap for smaller screens
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.2rem; // Further reduce gap for very small screens
+    padding: 0.25rem; // Reduce padding for very small screens
+  }
 
   .icon-container {
     position: relative;
