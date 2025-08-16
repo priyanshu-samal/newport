@@ -1,0 +1,23 @@
+.about-section {
+  max-width: 600px; /* Limit width for readability */
+  margin-top: 10vw; /* Space from previous component, increased for more distance */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Satoshi Light', sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.6rem);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.italic-satoshi {
+  font-family: 'Satoshi Italic', sans-serif;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    margin-top: 100px; /* Increase margin-top for mobile view */
+    font-size: 1.1rem; /* Increased font size for mobile view */
+    
+  }
+}

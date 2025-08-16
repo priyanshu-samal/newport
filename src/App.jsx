@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Profile from './components/Profile'
 import { FloatingDock } from './components/FloatingDock'
 import NameDisplay from './components/NameDisplay'
+import About from './components/About' // New import
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
           <Profile />
           <NameDisplay />
         </div>
+        <About /> {/* New component, moved outside hero-section */}
         
         <FloatingDock/>
       </div>

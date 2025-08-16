@@ -8,26 +8,13 @@
   padding: 0 20px;
 
   @media (max-width: 768px) {
-    padding: 0;
-  }
-}
-
-.app {
-  width: 100%;
-}
-
-.container {
-  max-width: 1200px; // You can adjust this value
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (max-width: 768px) {
-    padding: 0;
+    padding: 0 20px;
   }
 }
 
 .hero-section {
   position: relative;
+  min-height: 300px; // Default min-height for desktop
   // Define CSS variables for responsive positioning
   --header-height-lg: 200px;
   --header-height-md: 150px;
@@ -57,17 +44,15 @@
     z-index: 10;
     width: auto;
   }
-
   @media (max-width: 768px) {
+    min-height: 250px; // Adjusted min-height for medium screens
     --current-header-height: var(--header-height-md);
     --current-profile-image-size: var(--profile-image-size-md);
-
     .profile {
       position: absolute; /* Keep absolute positioning */
       left: 5vw; /* Maintain left alignment */
       top: calc(var(--current-header-height) - (var(--current-profile-image-size) / 2)); /* Above banner */
     }
-
     .name-display {
       position: absolute; /* Keep absolute positioning */
       left: calc(5vw + var(--current-profile-image-size) + 20px); /* To the right of profile */
@@ -75,9 +60,12 @@
       width: auto;
     }
   }
-
   @media (max-width: 480px) {
+    min-height: 200px; // Adjusted min-height for small screens
     --current-header-height: var(--header-height-sm);
     --current-profile-image-size: var(--profile-image-size-sm);
   }
+}
+.about {
+  margin-top: 80px; // Margin-top for about component after hero-section
 }
