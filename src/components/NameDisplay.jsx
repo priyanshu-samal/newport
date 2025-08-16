@@ -6,6 +6,7 @@ const NameDisplay = () => {
     <div className="name-display">
       <p className="greeting">Hi, I'm</p>
       <h1 className="name">Priyanshu Samal</h1>
+      <p className="subheading">Fullstack developer and a Maverick</p>
     </div>
   );
 };
