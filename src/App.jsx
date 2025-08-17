@@ -7,6 +7,7 @@ import NameDisplay from './components/NameDisplay';
 import About from './components/About';
 import Availability from './components/Availability';
 import Work from './components/Work/Work';
+import Experience from './components/Experience';
 import { useTheme } from './context/ThemeContext';
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <p className="work-subheading">I build MVPs and SaaS products, from simple sites to complex apps. Here are a few favorites.</p>
         </div>
         <Work />
+        <Experience />
         <FloatingDock/>
       </div>
     </div>

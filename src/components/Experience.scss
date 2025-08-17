@@ -1,0 +1,183 @@
+.experience-section {
+  padding: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-heading {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 25px; /* Align line to the left */
+  width: 2px;
+  height: 100%;
+  background-color: #e0e0e0; /* Light grey line */
+  transform: translateX(-50%);
+  z-index: 0;
+
+  .dark & {
+    background-color: #333; /* Darker line for dark mode */
+  }
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-left {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Position absolutely to align with line */
+  left: 0;
+  z-index: 2;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff; /* White background for logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+
+  .dark & {
+    background-color: #222;
+    border: 1px solid #444;
+  }
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%; /* Ensure circular image */
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text for logo */
+
+    .dark & {
+      color: #eee;
+    }
+  }
+}
+
+.timeline-right {
+  flex-grow: 1;
+  width: calc(100% - 70px); /* Adjust width for card */
+  padding-left: 70px; /* Space for logo */
+  text-align: left; /* Align text to left */
+}
+
+.experience-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #eee;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+  .dark & {
+    border: 1px solid #444;
+  }
+}
+
+.dates {
+  font-size: 0.85rem;
+  color: #777; /* Grey for dates */
+  margin-bottom: 5px;
+
+  .dark & {
+    color: #bbb;
+  }
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.organization-location {
+  font-size: 0.95rem;
+  color: #555; /* Slightly darker grey */
+  margin-bottom: 10px;
+
+  .dark & {
+    color: #ccc;
+  }
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  .dark & {
+    background-color: #555; /* Slightly lighter dark for dark mode */
+  }
+}
+
+/* Responsive adjustments - simplified as all items are left-aligned now */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 25px; /* Keep line to left for mobile */
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    flex-direction: row; /* Ensure row direction */
+    justify-content: flex-start;
+  }
+
+  .timeline-left {
+    left: 0;
+  }
+
+  .timeline-right {
+    width: calc(100% - 70px); /* Adjust width for card */
+    padding-left: 70px; /* Push card to the right of logo */
+    text-align: left;
+  }
+}
