@@ -8,6 +8,9 @@ import About from './components/About';
 import Availability from './components/Availability';
 import Work from './components/Work/Work';
 import Experience from './components/Experience';
+import LatestWorkSection from './components/LatestWorkSection';
+import BentoGrid from './components/BentoGrid'; // New import for BentoGrid
+import './components/BentoGrid.scss'; // Import BentoGrid styles
 import { useTheme } from './context/ThemeContext';
 
 const App = () => {
@@ -33,6 +36,7 @@ const App = () => {
         </div>
         <Work />
         <Experience />
+        <LatestWorkSection />
         <FloatingDock/>
       </div>
     </div>

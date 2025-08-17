@@ -1,0 +1,28 @@
+.latest-work-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  .latest-work-heading {
+    font-size: 2.5em;
+    color: var(--text-color-primary);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+
+    @media (max-width: 768px) {
+      font-size: 2em;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.5em;
+    }
+  }
+
+  .latest-work-subheading {
+    font-size: 1.2em;
+    color: var(--text-color-secondary);
+  }
+}
