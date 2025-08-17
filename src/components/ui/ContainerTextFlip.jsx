@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // Changed from motion/react to framer-m
 import "./ContainerTextFlip.scss"; // Import SCSS
 
 export function ContainerTextFlip({
-  words = ["x Posts", "Content", "Video", "Work"],
+  words = ["X Posts", "Content", "Video", "Work"],
   interval = 3000,
   className,
   textClassName,

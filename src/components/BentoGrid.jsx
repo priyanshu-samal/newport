@@ -13,14 +13,12 @@ const BentoGrid = () => {
           </video>
         </div>
         <div className="bento-item bento-item--small-1">
-          <h3>Small Box 1</h3>
-          <p>Content for small box 1</p>
+          <img src="" alt="" />
         </div>
 
         {/* Row 2 */}
         <div className="bento-item bento-item--small-2">
-          <h3>Small Box 2</h3>
-          <p>Content for small box 2</p>
+          <img src="" alt="" />
         </div>
         <div className="bento-item bento-item--video-large">
           <video muted autoPlay loop className="bento-video" style={{ pointerEvents: 'none' }}>
@@ -35,8 +33,7 @@ const BentoGrid = () => {
           <p>Content for small box 3</p>
         </div>
         <div className="bento-item bento-item--small-4">
-          <h3>Small Box 4</h3>
-          <p>Content for small box 4</p>
+          <img src="" alt="" />
         </div>
         <div className="bento-item bento-item--small-5">
           <h3>Small Box 5</h3>

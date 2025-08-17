@@ -5,7 +5,7 @@ const experiences = [
     {
     id: 1,
     type: 'freelance',
-    logo: 'F', // Using first letter as placeholder
+    logo: 'public/freelancing.jpg', // Using first letter as placeholder
     dates: '2024–2025',
     title: 'Freelancing',
     organization: '', // Organization not provided
@@ -16,7 +16,7 @@ const experiences = [
   {
     id: 2,
     type: 'work',
-    logo: 'C', // Using first letter as placeholder
+    logo: 'public/intern.jpg', // Using first letter as placeholder
     dates: '2023',
     title: 'Backend Intern',
     organization: 'CodeAte with ACC',
