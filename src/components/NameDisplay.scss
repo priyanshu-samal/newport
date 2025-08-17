@@ -22,8 +22,13 @@
     font-family: 'Satoshi Regular', sans-serif;
     font-size: clamp(0.7rem, 1.2vw, 1.5rem); /* Smaller than name */
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.7); /* Reduced brightness */
+    color: #737373; /* neutral-500 for light mode, improved readability */
     margin-top: 1vw; /* Increased space above subheading */
     line-height: 1.2;
+
+    /* Dark mode styles */
+    .dark & {
+      color: #a3a3a3; /* neutral-400 for dark mode */
+    }
   }
 }

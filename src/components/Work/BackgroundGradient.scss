@@ -1,0 +1,32 @@
+.background-gradient-container {
+  position: relative;
+  padding: 4px;
+
+  &.group:hover .background-gradient-animated-blur {
+    opacity: 1;
+  }
+}
+
+.background-gradient-animated-blur,
+.background-gradient-animated {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem; /* rounded-3xl */
+  z-index: 1;
+  will-change: transform;
+  background-image: radial-gradient(circle farthest-side at 0 100%, #00ccb1, transparent),
+    radial-gradient(circle farthest-side at 100% 0, #7b61ff, transparent),
+    radial-gradient(circle farthest-side at 100% 100%, #ffc414, transparent),
+    radial-gradient(circle farthest-side at 0 0, #1ca0fb, #141316);
+}
+
+.background-gradient-animated-blur {
+  opacity: 0.6;
+  filter: blur(1rem); /* blur-xl */
+  transition: opacity 500ms ease-in-out;
+}
+
+.background-gradient-content {
+  position: relative;
+  z-index: 10;
+}

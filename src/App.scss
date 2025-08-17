@@ -73,3 +73,39 @@
     margin-top: 60px; // Increased margin-top for desktop screens
   }
 }
+
+.work-section-header {
+  /* text-align: center; */ /* Removed for left alignment */
+  margin-top: 4rem; // Adjust as needed for spacing
+  margin-bottom: 2rem; // Adjust as needed for spacing
+  padding-left: 220px; // Increased to move content further to the right
+
+  @media (max-width: 768px) {
+    padding-left: 50px !important; // Adjust for medium screens
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 20px !important; // Adjust for small screens
+  }
+}
+
+.work-heading {
+  font-size: 2rem; // Example size, adjust as needed
+  color: var(--text-color); // Use theme text color
+  margin-bottom: 0.5rem;
+  opacity: 1; /* Full opacity */
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.work-subheading {
+  font-size: 1.2rem; // Example size, adjust as needed
+  color: var(--text-color); /* Use theme text color */
+  opacity: 0.5; /* Full opacity */
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
