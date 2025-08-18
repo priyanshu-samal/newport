@@ -1,0 +1,110 @@
+@use 'sass:color';
+
+$primary-color: #007bff; // A shade of blue
+
+.footer {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  &.light {
+    background-color: #ffffff; // Light background
+    color: #333; // Dark text
+    .footer-text, .footer-copy, .footer-email {
+      color: #666; // Slightly darker text for these elements
+    }
+    .footer-bottom {
+      border-top: 1px solid #ccc; // Lighter border
+    }
+    .footer-socials a {
+      color: #333; // Dark icons
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &.dark {
+    background-color: #1a1a1a; // Dark background
+    color: #fff; // Light text
+    .footer-text, .footer-copy, .footer-email {
+      color: #a0a0a0; // Lighter text for these elements
+    }
+    .footer-bottom {
+      border-top: 1px solid #333; // Darker border
+    }
+    .footer-socials a {
+      color: #fff; // Light icons
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    margin-bottom: 2rem;
+  }
+
+  .footer-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .footer-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .footer-button {
+    display: inline-block;
+    background-color: $primary-color;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: color.adjust($primary-color, $lightness: -10%);
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid; // Border color will be set by theme
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+  }
+
+  .footer-email {
+    font-size: 0.9rem;
+  }
+
+  .footer-copy {
+    font-size: 0.9rem;
+  }
+}

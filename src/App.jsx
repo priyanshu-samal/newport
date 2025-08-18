@@ -8,9 +8,11 @@ import About from './components/About';
 import Availability from './components/Availability';
 import Work from './components/Work/Work';
 import Experience from './components/Experience';
+import Skills from './components/Skills';
 import LatestWorkSection from './components/LatestWorkSection';
 import BentoGrid from './components/BentoGrid'; // New import for BentoGrid
 import './components/BentoGrid.scss'; // Import BentoGrid styles
+import Footer from './components/Footer';
 import { useTheme } from './context/ThemeContext';
 
 const App = () => {
@@ -36,9 +38,11 @@ const App = () => {
         </div>
         <Work />
         <Experience />
+        
         <LatestWorkSection />
         <FloatingDock/>
       </div>
+      <Footer />
     </div>
   );
 };
