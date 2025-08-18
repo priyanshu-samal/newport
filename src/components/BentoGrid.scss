@@ -1,3 +1,4 @@
+
 .bento-grid-section {
   padding: 20px;
   background-color: var(--background-color-secondary);
@@ -16,7 +17,7 @@
   background-color: var(--card-background-color);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +48,17 @@
     object-fit: cover;
     border-radius: 10px;
   }
+}
+
+.bento-item--image {
+  padding: 0;
+}
+
+.bento-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Specific positioning for items to achieve the desired flow */
@@ -84,6 +96,10 @@
   grid-row: 3;
 }
 
+.bento-item--square {
+  aspect-ratio: 1 / 1;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .bento-grid-container {
@@ -111,12 +127,44 @@
 
 @media (max-width: 480px) {
   .bento-grid-container {
-    grid-template-columns: 1fr; /* Single column on small screens */
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
   }
 
-  .bento-item--video-large {
-    grid-column: span 1; /* Spans 1 column */
-    grid-row: unset;
+  /* Video 1 (full row) */
+  .bento-item:nth-child(1) {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+
+  /* 2 tweets (half-width each) */
+  .bento-item:nth-child(2) {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+  .bento-item:nth-child(3) {
+    grid-column: span 1;
+    grid-row: 2;
+  }
+
+  /* Video 2 (full row) */
+  .bento-item:nth-child(4) {
+    grid-column: span 2;
+    grid-row: 3;
+  }
+
+  /* 2 extra images (half-width each) */
+  .bento-item:nth-child(5) {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+  .bento-item:nth-child(6) {
+    grid-column: span 1;
+    grid-row: 4;
+  }
+
+  /* 1 tweet image (full row) */
+  .bento-item:nth-child(7) {
+    grid-column: span 2;
+    grid-row: 5;
   }
 }

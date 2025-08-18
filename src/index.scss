@@ -29,7 +29,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body[data-theme='dark'] {
+html.dark {
   --background-color: #1a1a1a;
   --text-color: white;
   --card-background: #2a2a2a;
@@ -39,9 +39,10 @@ body[data-theme='dark'] {
   --button-text-color: white;
   --button-gradient-start: #4a4a4a;
   --button-gradient-end: #3a3a3a;
+  --bento-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-body[data-theme='light'] {
+html.light {
   --background-color: white;
   --text-color: black;
   --card-background: #f0f0f0;
@@ -51,6 +52,7 @@ body[data-theme='light'] {
   --button-text-color: white;
   --button-gradient-start: #61dafb;
   --button-gradient-end: #21a1f1;
+  --bento-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 body {

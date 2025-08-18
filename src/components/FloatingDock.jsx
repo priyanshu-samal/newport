@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import {
-  IconHome,
   IconUser,
   IconBriefcase,
   IconMail,
@@ -11,6 +10,7 @@ import {
   IconBrandLinkedin,
   IconBrandGithub,
   IconCalendar,
+  IconFileText,
 } from '@tabler/icons-react';
 import { useTheme } from '../context/ThemeContext';
 import copy from 'copy-to-clipboard';
@@ -18,9 +18,9 @@ import './FloatingDock.scss';
 
 const links = [
   {
-    title: 'Home',
-    icon: <IconHome />,
-    href: '#',
+    title: 'Resume',
+    icon: <IconFileText />,
+    href: 'https://drive.google.com/file/d/1uZLH_z0ioljHV2SedFZPRWb1prlUns42/view?usp=sharing',
   },
   {
     title: 'X',
