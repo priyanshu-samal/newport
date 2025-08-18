@@ -9,7 +9,7 @@ const experiences = [
     title: 'Freelancing',
     organization: 'Self-Employed',
     location: '',
-    description: 'Built MVPs and SaaS apps for clients, from simple landing pages to full-scale products.',
+    description: 'Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
     stack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Firebase', 'PostgreSQL'],
     logo: 'https://via.placeholder.com/40/0000FF/FFFFFF?text=F', // Placeholder for Freelancing
   },
