@@ -11,7 +11,7 @@ const experiences = [
     organization: '', // Organization not provided
     location: '', // Location not provided
     description: 'Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
-    techStack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Firebase', 'PostgreSQL'],
+    techStack: ['Next.js', 'React', 'MVPs', 'SaaS', 'Automation', 'Landing page'],
   },
   {
     id: 2,
