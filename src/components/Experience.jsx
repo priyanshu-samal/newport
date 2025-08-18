@@ -10,7 +10,7 @@ const experiences = [
     title: 'Freelancing',
     organization: '', // Organization not provided
     location: '', // Location not provided
-    description: 'Built MVPs and SaaS apps for clients, from simple landing pages to full-scale products.',
+    description: 'Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
     techStack: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript', 'Firebase', 'PostgreSQL'],
   },
   {
