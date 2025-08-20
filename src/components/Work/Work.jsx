@@ -5,8 +5,8 @@ import "./Work.scss";
 export default function Work() {
   const projects = [
     {
-      name: "Easynotes - A Note Taking App",
-      description: "A simple and intuitive note-taking application built with React and Node.js.",
+      name: "Easynotes",
+      description: "PDF Color Inverter for Students.",
       image: "/images/Easynotes.png",
       url: "https://www.easynotes.space/",
     },
@@ -18,7 +18,7 @@ export default function Work() {
     },
     {
       name: "BuildMvpFast",
-      description: "Rapid MVP generator that turns ideas into functional product blueprints instantly.",
+      description: "WE build MVP for Founders.",
       image: "/images/BuildMvpFast.png",
       url: "https://mvp-genesis-launchpad.vercel.app/",
     },
