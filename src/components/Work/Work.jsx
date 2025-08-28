@@ -7,7 +7,7 @@ export default function Work() {
      {
       name: "Remake K27",
       description: "Remaking the award-winning K27",
-      image: "/images/Easynotes.png",
+      image: "/images/k27.png",
       url: "https://k72-mu.vercel.app//",
     },
     {
