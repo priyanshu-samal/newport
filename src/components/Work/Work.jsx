@@ -4,11 +4,11 @@ import "./Work.scss";
 
 export default function Work() {
   const projects = [
-    {
-      name: "Easynotes",
-      description: "PDF Color Inverter for Students.",
+     {
+      name: "Remake K27",
+      description: "Remaking the award-winning K27",
       image: "/images/Easynotes.png",
-      url: "https://www.easynotes.space/",
+      url: "https://k72-mu.vercel.app//",
     },
     {
       name: "Destiny",
@@ -45,6 +45,12 @@ export default function Work() {
       description: "Real-time chat app with filters, group chat, and member assignments.",
       image: "/images/Periskope.png",
       url: "https://periskopechat.vercel.app/login",
+    },
+     {
+      name: "Easynotes",
+      description: "PDF Color Inverter for Students.",
+      image: "/images/Easynotes.png",
+      url: "https://www.easynotes.space/",
     },
   ];
 
