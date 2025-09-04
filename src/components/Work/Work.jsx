@@ -16,6 +16,12 @@ export default function Work() {
       image: "/images/Destiny.png",
       url: "https://destiny-delta.vercel.app/",
     },
+     {
+      name: "SpotiyOnTerminal",
+      description: "Built a Rust CLI that controls Spotify 🎶, playlists right from the terminal",
+      image: "/images/rust.png",
+      url: "https://github.com/priyanshu-samal/spotifytermrust",
+    },
     {
       name: "BuildMvpFast",
       description: "WE build MVP for Founders.",
