@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={`footer ${theme}`}>
       <div className="footer-container">
         <div className="footer-top">
-          <h2 className="footer-title">Want to connect?</h2>
+          <h2 className="footer-title">Want to connect ?</h2>
           <p className="footer-text">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.
           </p>
