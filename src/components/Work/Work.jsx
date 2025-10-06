@@ -11,6 +11,12 @@ export default function Work() {
       url: "https://k72-mu.vercel.app//",
     },
     {
+      name: "MicroBazzar",
+      description: "Feature-rich e-commerce platform using a Microservices architecture",
+      image: "/images/microbazzar.png",
+      url: "https://github.com/priyanshu-samal/microBazaar",
+    },
+    {
       name: "Destiny",
       description: "AI-powered travel planner that creates personalized itineraries with maps, photos, and trip management.",
       image: "/images/Destiny.png",
