@@ -20,7 +20,7 @@ const links = [
   {
     title: 'Resume',
     icon: <IconFileText />,
-    href: 'https://drive.google.com/file/d/1uZLH_z0ioljHV2SedFZPRWb1prlUns42/view?usp=sharing',
+    href: 'https://drive.google.com/file/d/1gFqNcemIXrKlNgDYfUanrth7TkaZ4WVi/view?usp=sharing',
   },
   {
     title: 'X',
