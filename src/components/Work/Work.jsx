@@ -29,6 +29,12 @@ export default function Work() {
       url: "https://github.com/priyanshu-samal/spotifytermrust",
     },
     {
+      name: "Sangeet",
+      description: "Project is an ambitious journey to build a scalable, resilient, and feature-rich music streaming platform, using a microservices architecture.",
+      image: "/images/sangeet.png",
+      url: "https://github.com/priyanshu-samal/sangeet",
+    },
+    {
       name: "BuildMvpFast",
       description: "WE build MVP for Founders.",
       image: "/images/BuildMvpFast.png",
