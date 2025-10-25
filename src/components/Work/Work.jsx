@@ -125,7 +125,9 @@ export default function Work() {
                 <p className="work-description">{project.description}</p>
                 <button className="work-button">
                   <span>View Project </span>
-                  <span className="work-button-price">Live</span>
+                  <span className="work-button-price">
+                    <span className="green-dot"></span>Live
+                  </span>
                 </button>
               </div>
             </BackgroundGradient>

@@ -1,0 +1,58 @@
+.threads-and-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem auto 2rem auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.article-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--card-hover-bg-color);
+  }
+}
+
+.article-icon {
+  font-size: 1.5rem;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.article-title {
+  margin: 0;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.article-link {
+  font-size: 0.875rem;
+  color: var(--button-text-color);
+  background: linear-gradient(to right, var(--button-gradient-start), var(--button-gradient-end));
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

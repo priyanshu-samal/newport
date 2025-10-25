@@ -29,4 +29,6 @@
 .background-gradient-content {
   position: relative;
   z-index: 10;
+  background-color: var(--card-background);
+  border-radius: calc(1.5rem - 4px);
 }

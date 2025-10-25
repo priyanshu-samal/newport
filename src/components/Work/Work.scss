@@ -33,11 +33,10 @@
   padding: 1rem 0; /* p-4, but 0 horizontal padding */
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #f8f8f8; /* Changed to light grey for light mode */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 400px; /* Reverted to min-height */
+  height: 420px; /* Reverted to min-height */
   transition: background-color 0.3s ease; /* Added transition */
 
   /* Dark mode styles */
@@ -52,7 +51,12 @@
 }
 
 .work-content-wrapper {
+  width: 100%;
   padding: 0 1rem; /* Add horizontal padding to the content wrapper */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .work-image {
@@ -81,19 +85,25 @@
 .work-description {
   font-size: 0.875rem; /* text-sm */
   color: #525252; /* neutral-600 */
-  flex-grow: 1; /* Allow description to take available space */
   transition: color 0.3s ease; /* Added transition */
   /* Dark mode styles */
   .dark & {
     color: #a3a3a3; /* neutral-400 */
   }
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-button {
   display: inline-flex; /* Use inline-flex to allow content to dictate width */
+  justify-content: center;
+  align-self: center;
   align-items: center;
   gap: 0.5rem; /* Space between "View Project" and "Live" */
-  margin-top: 1rem; /* Add some space above the button */
+  margin-top: auto; /* Add some space above the button */
   padding: 0.5rem 1rem; /* Add padding to the button */
   border-radius: 9999px; /* rounded-full */
   background-color: #000; /* Example background color */
@@ -109,6 +119,8 @@
 }
 
 .work-button-price {
+  display: inline-flex;
+  align-items: center;
   background-color: #3f3f46; /* zinc-700 */
   border-radius: 9999px; /* rounded-full */
   font-size: 0.6rem;
@@ -117,6 +129,28 @@
   padding-top: 0;
   padding-bottom: 0;
   color: white;
+}
+
+.green-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
 }
 
 .show-more-button {

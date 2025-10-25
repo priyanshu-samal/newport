@@ -93,10 +93,10 @@ function IconContainer({ mouseX, title, icon, href }) {
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-    return val - bounds.x - bounds.width / 2;
+    return Math.abs(val - bounds.x - bounds.width / 2);
   });
 
-  let widthTransform = useTransform(distance, [0, 100], [60, 30]);
+  let widthTransform = useTransform(distance, [0, 300], [60, 30]);
 
   let width = useSpring(widthTransform, {
     mass: 0.1,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContainerTextFlip } from './ui/ContainerTextFlip';
 import BentoGrid from './BentoGrid';
+import ThreadsAndArticles from './ThreadsAndArticles';
 import './LatestWorkSection.scss';
 
 const LatestWorkSection = () => {
@@ -9,7 +10,7 @@ const LatestWorkSection = () => {
       <h2 className="latest-work-heading">
         Check My Latest <ContainerTextFlip />
       </h2>
-      
+      <ThreadsAndArticles />
       <BentoGrid />
     </div>
   );
