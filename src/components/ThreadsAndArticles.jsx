@@ -3,6 +3,12 @@ import './ThreadsAndArticles.scss';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const articles = [
+    {
+    platform: 'X',
+    icon: <FaXTwitter />,
+    title: "A thread on why Socket.io's developer documentation is a \"cheat code.\"",
+    url: 'https://x.com/PriyanshuS92042/status/1982659945536569699',
+  },
   {
     platform: 'X',
     icon: <FaXTwitter />,
