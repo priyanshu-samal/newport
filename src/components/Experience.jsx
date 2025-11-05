@@ -2,19 +2,30 @@ import React from 'react';
 import './Experience.scss';
 
 const experiences = [
-    {
+       {
     id: 1,
+    type: 'stealth startup',
+    logo: '/stealth.jpg', // Using first letter as placeholder
+    dates: '2024–2025',
+    title: 'Developer',
+    organization: '', // Organization not provided
+    location: '', // Location not provided
+    description: 'Developer at a stealth startup working on connecting investors & startups',
+    techStack: "",
+  },
+    {
+    id: 2,
     type: 'freelance',
     logo: '/freelancing.jpg', // Using first letter as placeholder
     dates: '2024–2025',
-    title: 'Freelancing',
+    title: 'Co Founder',
     organization: '', // Organization not provided
     location: '', // Location not provided
-    description: 'Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
-    techStack: ['Next.js', 'React', 'MVPs', 'SaaS', 'Automation', 'Landing page'],
+    description: 'Co-Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
+    techStack: "",
   },
   {
-    id: 2,
+    id: 3,
     type: 'work',
     logo: '/intern.jpg', // Using first letter as placeholder
     dates: '2023',
@@ -22,7 +33,7 @@ const experiences = [
     organization: 'CodeAte with ACC',
     location: '', // Location not provided, leaving empty
     description: 'Implemented authentication (bcrypt, 2FA, RBAC) and built backend features in Node.js.',
-    techStack: ['Node.js', 'Express', 'MongoDB'],
+    techStack: "",
   },
 
 ];
