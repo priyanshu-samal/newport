@@ -11,7 +11,7 @@ const experiences = [
     organization: '', // Organization not provided
     location: '', // Location not provided
     description: 'Developer at a stealth startup working on connecting investors & startups',
-    techStack: "",
+    techStack: [],
   },
     {
     id: 2,
@@ -22,7 +22,7 @@ const experiences = [
     organization: '', // Organization not provided
     location: '', // Location not provided
     description: 'Co-Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
-    techStack: "",
+    techStack: [],
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const experiences = [
     organization: 'CodeAte with ACC',
     location: '', // Location not provided, leaving empty
     description: 'Implemented authentication (bcrypt, 2FA, RBAC) and built backend features in Node.js.',
-    techStack: "",
+    techStack: [],
   },
 
 ];
