@@ -21,7 +21,7 @@ const experiences = [
     title: 'Co Founder',
     organization: '', // Organization not provided
     location: '', // Location not provided
-    description: 'Co-Founder of BuildMvpFast.tech, building MVPs and SaaS products for my clients.',
+    description: 'Co-Founder of BuildMvpFast.tech, building MVPs and SaaS products for our clients.',
     techStack: [],
   },
   {
