@@ -10,6 +10,7 @@ import Work from './components/Work/Work';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import LatestWorkSection from './components/LatestWorkSection';
+import ClientWork from './components/ClientWork/ClientWork';
 import BentoGrid from './components/BentoGrid'; // New import for BentoGrid
 import './components/BentoGrid.scss'; // Import BentoGrid styles
 import Footer from './components/Footer';
@@ -37,6 +38,11 @@ const App = () => {
           <p className="work-subheading">I build MVPs and SaaS products, from simple sites to complex apps. Here are a few favorites.</p>
         </div>
         <Work />
+        <div className="work-section-header">
+          <h2 className="work-heading">Client Work</h2>
+          <p className="work-subheading">Here are some of the landing pages and websites I've designed and built for clients.</p>
+        </div>
+        <ClientWork />
         <Experience />
         
         <LatestWorkSection />

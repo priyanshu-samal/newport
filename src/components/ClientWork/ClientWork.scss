@@ -1,0 +1,170 @@
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to 1 column for mobile */
+  gap: 1rem; /* Vertical and horizontal space between cards */
+  justify-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    /* md:grid-cols-2 */
+    grid-template-columns: 1fr 1fr; /* 2 columns for desktop */
+    column-gap: 1rem; /* Small horizontal space between cards */
+    row-gap: 1rem; /* Consistent vertical space */
+  }
+}
+
+.work-card-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%; /* Ensure link takes full width of grid item */
+  max-width: 26rem; /* max-w-sm, same as work-card-gradient-wrapper */
+}
+
+.work-card-gradient-wrapper {
+  border-radius: 22px;
+  width: 100%; /* Take full width of its container */
+  padding: 1rem 0; /* p-4, but 0 horizontal padding */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 420px; /* Reverted to min-height */
+  transition: background-color 0.3s ease; /* Added transition */
+
+  /* Dark mode styles */
+  .dark & {
+    background-color: #18181b; /* zinc-900 */
+  }
+
+  @media (min-width: 640px) {
+    /* sm:p-10 */
+    padding: 2.5rem 0; /* 2.5rem vertical, 0 horizontal */
+  }
+}
+
+.work-content-wrapper {
+  width: 100%;
+  padding: 0 1rem; /* Add horizontal padding to the content wrapper */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.work-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* Reverted to auto height */
+}
+
+.work-title {
+  font-size: 1rem; /* text-base */
+  color: black; /* Default color for light mode */
+  margin-top: 1rem; /* mt-4 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  transition: color 0.3s ease; /* Added transition */
+  /* Dark mode styles */
+  .dark & {
+    color: #e5e5e5; /* neutral-200 */
+  }
+
+  @media (min-width: 640px) {
+    /* sm:text-xl */
+    font-size: 1.25rem;
+  }
+}
+
+.work-description {
+  font-size: 0.875rem; /* text-sm */
+  color: #525252; /* neutral-600 */
+  transition: color 0.3s ease; /* Added transition */
+  /* Dark mode styles */
+  .dark & {
+    color: #a3a3a3; /* neutral-400 */
+  }
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-button {
+  display: inline-flex; /* Use inline-flex to allow content to dictate width */
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  gap: 0.5rem; /* Space between "View Project" and "Live" */
+  margin-top: auto; /* Add some space above the button */
+  padding: 0.5rem 1rem; /* Add padding to the button */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #000; /* Example background color */
+  color: #fff; /* Example text color */
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem; /* text-sm */
+  transition: background-color 0.3s ease;
+
+  .dark & {
+    background-color: #27272a; /* Dark mode background */
+  }
+}
+
+.work-button-price {
+  display: inline-flex;
+  align-items: center;
+  background-color: #3f3f46; /* zinc-700 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.6rem;
+  padding-left: 0.5rem; /* px-2 */
+  padding-right: 0.5rem; /* px-2 */
+  padding-top: 0;
+  padding-bottom: 0;
+  color: white;
+}
+
+.green-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+.show-more-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease; /* Added transition */
+
+  .dark & {
+    background-color: #27272a;
+  }
+}
