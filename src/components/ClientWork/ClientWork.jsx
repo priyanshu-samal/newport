@@ -6,6 +6,13 @@ import "./ClientWork.scss";
 export default function ClientWork() {
   const projects = [
     {
+      name: "Eternal",
+      description: "Find where you belong",
+      poster: "/extra/eternal.png",
+      video: "/extra/eternal.mp4",
+      url: "https://ethereal-landing-forge.vercel.app/",
+    },
+    {
       name: "WhisperTrends",
       description: "Get actionable trend briefs from X, TikTok, and Reddit—with ready-to-publish content ideas—before topics go viral.",
       poster: "/extra/whisperthreads.png",
