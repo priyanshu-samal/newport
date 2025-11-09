@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { BackgroundGradient } from "../Work/BackgroundGradient";
 import "./ClientWork.scss";
 
+
+
 export default function ClientWork() {
   const projects = [
     {
@@ -11,6 +13,20 @@ export default function ClientWork() {
       poster: "/extra/eternal.png",
       video: "/extra/eternal.mp4",
       url: "https://ethereal-landing-forge.vercel.app/",
+    },
+    {
+      name: "Stillness",
+      description: "Peace is where you live",
+      poster: "/extra/stillness.png",
+      video: "/extra/stillness.mp4",
+      url: "https://stillness-intro-page.vercel.app/",
+    },
+    {
+      name: "Forest",
+      description: "peace is where you live",
+      poster: "/extra/forest.png",
+      video: "/extra/forest.mp4",
+      url: "https://mist-whispers-landing.vercel.app/",
     },
     {
       name: "WhisperTrends",

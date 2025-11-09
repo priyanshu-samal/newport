@@ -34,15 +34,15 @@ const App = () => {
         <About />
         <Availability />
         <div className="work-section-header">
-          <h2 className="work-heading">My Projects</h2>
-          <p className="work-subheading">I build MVPs and SaaS products, from simple sites to complex apps. Here are a few favorites.</p>
-        </div>
-        <Work />
-        <div className="work-section-header">
           <h2 className="work-heading">Client Work</h2>
           <p className="work-subheading">Here are some of the landing pages and websites I've designed and built for clients.</p>
         </div>
         <ClientWork />
+        <div className="work-section-header">
+          <h2 className="work-heading">My Projects</h2>
+          <p className="work-subheading">I build MVPs and SaaS products, from simple sites to complex apps. Here are a few favorites.</p>
+        </div>
+        <Work />
         <Experience />
         
         <LatestWorkSection />
