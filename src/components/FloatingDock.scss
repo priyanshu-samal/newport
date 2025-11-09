@@ -14,6 +14,15 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   max-width: 90%; /* Added for responsiveness */
 
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
     gap: 0.4rem; // Adjust gap for smaller screens
   }

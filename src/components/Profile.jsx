@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <div className={profileClassName}>
       <div className="profile-image-container">
-        <img src="/priyanshusamal-png.jpg" alt="Priyanshu Samal" />
+        <img src="/priyanshusamal-png.jpg" alt="Priyanshu Samal" loading="lazy" />
       </div>
     </div>
   );

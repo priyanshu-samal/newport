@@ -4,7 +4,7 @@ import './Header.scss'
 const Header = () => {
   return (
     <div className="header">
-      <img src="/header.jpg" alt="Header" />
+      <img src="/header.jpg" alt="Header" loading="lazy" />
     </div>
   )
 }

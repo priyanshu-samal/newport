@@ -119,6 +119,7 @@ export default function Work() {
                 height="400"
                 width="400"
                 className="work-image"
+                loading="lazy"
               />
               <div className="work-content-wrapper">
                 <p className="work-title">{project.name}</p>

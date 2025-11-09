@@ -78,6 +78,7 @@ export default function ClientWork() {
   const handleMouseLeave = (index) => {
     if (videoRefs.current[index]) {
       videoRefs.current[index].pause();
+      videoRefs.current[index].currentTime = 0;
       videoRefs.current[index].load();
     }
   };
@@ -103,6 +104,7 @@ export default function ClientWork() {
                 muted
                 loop
                 playsInline
+                preload="auto"
                 className="work-image" // Reusing the same class for styling consistency
               />
               <div className="work-content-wrapper">

@@ -70,20 +70,21 @@ export const FloatingDock = () => {
       {links.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
-      <div
+      <button
         onClick={handleCopy}
         onMouseEnter={() => setEmailHovered(true)}
         onMouseLeave={() => setEmailHovered(false)}
         className="icon-container email-icon"
+        aria-label={copied ? 'Email copied' : 'Copy email to clipboard'}
       >
         <IconMail />
         {(emailHovered || copied) && (
           <div className="tooltip">{copied ? 'Copied!' : 'Copy email'}</div>
         )}
-      </div>
-      <div onClick={toggleTheme} className="theme-toggle">
+      </button>
+      <button onClick={toggleTheme} className="theme-toggle" aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
         {theme === 'dark' ? <IconSun /> : <IconMoon />}
-      </div>
+      </button>
     </motion.div>
   );
 };
@@ -107,7 +108,7 @@ function IconContainer({ mouseX, title, icon, href }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={title}>
       <motion.div
         ref={ref}
         style={{ width }}
