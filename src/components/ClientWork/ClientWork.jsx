@@ -31,8 +31,8 @@ export default function ClientWork() {
     {
       name: "WhisperTrends",
       description: "Get actionable trend briefs from X, TikTok, and Reddit—with ready-to-publish content ideas—before topics go viral.",
-      poster: "/extra/whisperthreads.png",
-      video: "/extra/whispertrends.mp4",
+      poster: "/extra/trends.png",
+      video: "/extra/trends.mp4",
       url: "https://whisper-trend-page.vercel.app/",
     },
     // Future client work projects can be added here
