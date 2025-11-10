@@ -35,6 +35,13 @@ export default function ClientWork() {
       video: "/extra/trends.mp4",
       url: "https://whisper-trend-page.vercel.app/",
     },
+    {
+      name: "Spark",
+      description: "Find spark within you.",
+      poster: "/extra/spark.png",
+      video: "/extra/spark.mp4",
+      url: "https://ugh-club-hero-zen.vercel.app/",
+    },
     // Future client work projects can be added here
   ];
 
@@ -48,21 +55,16 @@ export default function ClientWork() {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      if (!mobile) {
-        setVisibleProjects(projects.length); // Show all projects on desktop/tablet
-      } else {
-        // If switching to mobile, and all projects are currently visible, reset to initial mobile view
-        if (visibleProjects === projects.length) {
-          setVisibleProjects(2);
-        }
+      const newIsMobile = window.innerWidth <= 768;
+      if (newIsMobile !== isMobile) {
+        setIsMobile(newIsMobile);
+        setVisibleProjects(newIsMobile ? 2 : projects.length);
       }
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [projects.length, visibleProjects]);
+  }, [isMobile, projects.length]);
 
   const handleShowMore = () => {
     setVisibleProjects(projects.length);

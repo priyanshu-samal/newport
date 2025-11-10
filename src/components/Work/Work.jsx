@@ -81,21 +81,16 @@ export default function Work() {
 
   useEffect(() => {
     const handleResize = () => {
-      const mobile = window.innerWidth <= 768;
-      setIsMobile(mobile);
-      if (!mobile) {
-        setVisibleProjects(projects.length); // Show all projects on desktop/tablet
-      } else {
-        // If switching to mobile, and all projects are currently visible, reset to initial mobile view
-        if (visibleProjects === projects.length) {
-          setVisibleProjects(2);
-        }
+      const newIsMobile = window.innerWidth <= 768;
+      if (newIsMobile !== isMobile) {
+        setIsMobile(newIsMobile);
+        setVisibleProjects(newIsMobile ? 2 : projects.length);
       }
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [projects.length, visibleProjects]); // Added visibleProjects to dependency array
+  }, [isMobile, projects.length]);
 
   const handleShowMore = () => {
     setVisibleProjects(projects.length);
