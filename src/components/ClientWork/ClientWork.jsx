@@ -42,6 +42,13 @@ export default function ClientWork() {
       video: "/extra/spark.mp4",
       url: "https://ugh-club-hero-zen.vercel.app/",
     },
+    {
+      name: "SpacePeace",
+      description: "Connecting world together",
+      poster: "/extra/spacepeace.png",
+      video: "/extra/spacepeace.mp4",
+      url: "https://cinematic-ai-zenith.vercel.app/",
+    },
     // Future client work projects can be added here
   ];
 
