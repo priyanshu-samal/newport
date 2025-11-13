@@ -49,6 +49,13 @@ export default function ClientWork() {
       video: "/extra/spacepeace.mp4",
       url: "https://cinematic-ai-zenith.vercel.app/",
     },
+    {
+      name: "Noir",
+      description: "Making a statement from fashion",
+      poster: "/extra/noir.png",
+      video: "/extra/noir.mp4",
+      url: "https://noir-editorial-vision.vercel.app/",
+    },
     // Future client work projects can be added here
   ];
 
