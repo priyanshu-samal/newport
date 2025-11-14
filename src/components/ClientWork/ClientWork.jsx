@@ -56,6 +56,13 @@ export default function ClientWork() {
       video: "/extra/noir.mp4",
       url: "https://noir-editorial-vision.vercel.app/",
     },
+    {
+      name: "Peace",
+      description: "Travell where peace is",
+      poster: "/extra/place.png",
+      video: "",
+      url: "https://tranquil-scene-builder.vercel.app/",
+    },
     // Future client work projects can be added here
   ];
 
