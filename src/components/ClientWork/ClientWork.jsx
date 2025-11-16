@@ -26,7 +26,7 @@ export default function ClientWork() {
       description: "Future is here",
       poster: "/extra/energy.jpeg",
       video: "/extra/energy.mp4",
-      url: "https://mist-whispers-landing.vercel.app/",
+      url: "https://green-horizon-landing.vercel.app/",
     },
     {
       name: "WhisperTrends",
