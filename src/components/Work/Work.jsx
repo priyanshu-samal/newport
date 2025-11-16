@@ -7,7 +7,7 @@ export default function Work() {
      {
       name: "Remake K27",
       description: "Remaking the award-winning K27",
-      image: "/images/k27.png",
+      image: "/images/k27.jpeg",
       url: "https://k72-mu.vercel.app//",
     },
     {
@@ -19,55 +19,55 @@ export default function Work() {
     {
       name: "Destiny",
       description: "AI-powered travel planner that creates personalized itineraries with maps, photos, and trip management.",
-      image: "/images/Destiny.png",
+      image: "/images/Destiny.jpeg",
       url: "https://destiny-delta.vercel.app/",
     },
      {
       name: "SpotiyOnTerminal",
       description: "Built a Rust CLI that controls Spotify 🎶, playlists right from the terminal",
-      image: "/images/rust.png",
+      image: "/images/rust.jpeg",
       url: "https://github.com/priyanshu-samal/spotifytermrust",
     },
     {
       name: "Sangeet",
       description: "Project is an ambitious journey to build a scalable, resilient, and feature-rich music streaming platform, using a microservices architecture.",
-      image: "/images/sangeet.png",
+      image: "/images/sangeet.jpeg",
       url: "https://github.com/priyanshu-samal/sangeet",
     },
     {
       name: "BuildMvpFast",
       description: "WE build MVP for Founders.",
-      image: "/images/BuildMvpFast.png",
+      image: "/images/BuildMvpFast.jpeg",
       url: "https://mvp-genesis-launchpad.vercel.app/",
     },
     {
       name: "SnitchRedesign",
       description: "Redesigned platform UI for hackathon submissions, improving clarity and usability.",
-      image: "/images/SnitchRebrand.png",
+      image: "/images/SnitchRebrand.jpeg",
       url: "https://hackathonsnitch.vercel.app/",
     },
     {
       name: "Wordsmith",
       description: "AI SaaS tool for generating content like blogs, posts, and threads in seconds.",
-      image: "/images/Wordsmith.png",
+      image: "/images/Wordsmith.jpeg",
       url: "https://wordsmith-gilt.vercel.app/",
     },
     {
       name: "Hissab",
       description: "Expense and billing tracker for managing personal and shared finances.",
-      image: "/images/Hissab.png",
+      image: "/images/Hissab.jpeg",
       url: "https://hissab.vercel.app/sign-in",
     },
     {
       name: "PeriskopeChat",
       description: "Real-time chat app with filters, group chat, and member assignments.",
-      image: "/images/Periskope.png",
+      image: "/images/Periskope.jpeg",
       url: "https://periskopechat.vercel.app/login",
     },
      {
       name: "Easynotes",
       description: "PDF Color Inverter for Students.",
-      image: "/images/Easynotes.png",
+      image: "/images/Easynotes.jpeg",
       url: "https://www.easynotes.space/",
     },
   ];
