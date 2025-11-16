@@ -21,11 +21,11 @@ export default function ClientWork() {
       video: "/extra/stillness.mp4",
       url: "https://stillness-intro-page.vercel.app/",
     },
-    {
-      name: "Forest",
-      description: "peace is where you live",
-      poster: "/extra/forest.jpeg",
-      video: "/extra/forest.mp4",
+      {
+      name: "Energygon",
+      description: "Future is here",
+      poster: "/extra/energy.jpeg",
+      video: "/extra/energy.mp4",
       url: "https://mist-whispers-landing.vercel.app/",
     },
     {
@@ -34,6 +34,13 @@ export default function ClientWork() {
       poster: "/extra/trend.jpeg",
       video: "/extra/trends.mp4",
       url: "https://whisper-trend-page.vercel.app/",
+    },
+     {
+      name: "Forest",
+      description: "peace is where you live",
+      poster: "/extra/forest.jpeg",
+      video: "/extra/forest.mp4",
+      url: "https://mist-whispers-landing.vercel.app/",
     },
     {
       name: "Spark",
