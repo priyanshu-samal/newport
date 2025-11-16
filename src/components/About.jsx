@@ -41,7 +41,7 @@ const About = () => {
         initial="hidden"
         animate="visible"
       >
-        I build web apps that load <motion.span variants={word} className="italic-satoshi">fast</motion.span>, <motion.span variants={word} className="italic-satoshi">scale well</motion.span>, and <motion.span variants={word} className="italic-satoshi">don’t crash</motion.span> when real users show up. Next.js, TypeScript, and backend systems are my tools of choice. Right now, I’m pushing myself to launch <motion.span variants={word} className="italic-satoshi">MVPs at speed</motion.span> turning rough ideas into working products in <motion.span variants={word} className="italic-satoshi">days, not months</motion.span>.
+        I build Full-Stack and GenAI-powered web apps that <motion.span variants={word} className="italic-satoshi">load fast</motion.span>, <motion.span variants={word} className="italic-satoshi">scale hard</motion.span>, and stay stable when real traffic hits. Next.js, TypeScript, solid <motion.span variants={word} className="italic-satoshi">backend architecture</motion.span>, and AI workflows are my core tools. Right now, I’m shipping <motion.span variants={word} className="italic-satoshi">MVPs at speed</motion.span> turning raw ideas into working products in <motion.span variants={word} className="italic-satoshi">days, not months</motion.span>.
       </motion.p>
     </div>
   );

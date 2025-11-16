@@ -67,7 +67,11 @@ export default function ClientWork() {
   ];
 
   const getInitialVisibleProjects = () => {
-    return window.innerWidth <= 768 ? 2 : projects.length;
+    if (window.innerWidth <= 768) {
+      return 2;
+    } else {
+      return 4;
+    }
   };
 
   const [visibleProjects, setVisibleProjects] = useState(getInitialVisibleProjects());
@@ -144,7 +148,7 @@ export default function ClientWork() {
           </a>
         ))}
       </div>
-      {isMobile && visibleProjects < projects.length && (
+      {visibleProjects < projects.length && (
         <button onClick={handleShowMore} className="show-more-button">
           Show More
         </button>
