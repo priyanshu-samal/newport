@@ -1,8 +1,15 @@
 import React from 'react';
 import './ThreadsAndArticles.scss';
 import { FaXTwitter } from 'react-icons/fa6';
+import { FaMediumM } from "react-icons/fa";
 
 const articles = [
+    {
+    platform: 'Medium',
+    icon: <FaMediumM />,
+    title: 'Best Practices for Prompt Engineering: A Practical Guide',
+    url: 'https://medium.com/@samalpriyanshu966/best-practices-for-prompt-engineering-a-practical-guide-e4d30c76b761',
+  },
     {
     platform: 'X',
     icon: <FaXTwitter />,
