@@ -7,6 +7,12 @@ const articles = [
     {
     platform: 'Medium',
     icon: <FaMediumM />,
+    title: 'Transformers for Noobs: The AI Behind Everything',
+    url: 'https://medium.com/@samalpriyanshu966/transformers-for-noobs-the-ai-behind-everything-8d7539821242',
+  },
+    {
+    platform: 'Medium',
+    icon: <FaMediumM />,
     title: 'Best Practices for Prompt Engineering: A Practical Guide',
     url: 'https://medium.com/@samalpriyanshu966/best-practices-for-prompt-engineering-a-practical-guide-e4d30c76b761',
   },
