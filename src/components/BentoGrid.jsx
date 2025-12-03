@@ -8,7 +8,7 @@ const BentoGrid = () => {
         {/* Row 1 */}
         <div className="bento-item bento-item--video-large">
           <video muted autoPlay loop playsInline className="bento-video" style={{ pointerEvents: 'none' }}>
-            <source src="/video/4aug.mp4" type="video/mp4" />
+            <source src="/video/q.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
