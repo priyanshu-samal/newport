@@ -5,6 +5,12 @@ import { FaMediumM } from "react-icons/fa";
 
 const articles = [
     {
+    platform: 'X',
+    icon: <FaXTwitter />,
+    title: 'Monetization turned Tech Twitter into LinkedIn with better fonts.',
+    url: 'https://x.com/PriyanshuS92042/status/2000570428734194036?s=20',
+  },
+    {
     platform: 'Medium',
     icon: <FaMediumM />,
     title: 'Transformers for Noobs: The AI Behind Everything',
